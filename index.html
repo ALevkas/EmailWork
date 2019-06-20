@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="style.css">
     <!--[if (gte mso 9)|(IE)]>
     <style type="text/css">
         table {border-collapse: collapse;}
@@ -24,11 +24,216 @@
                         <td>
             <![endif]-->
             <table class="outer" align="center">
+                <!-- заголовок -->
                 <tr>
-                    <td>
-                        hello world
+                    <td class="one-column">
+                        <table width="100%">
+                            <tr width="10%" class="header">
+                                <td class="inner contents">
+                                    <img src="./images/head.png" alt="">
+                                </td>
+                                <td width="90%" class="inner contents">
+                                    <p>Обратите<br />внимание</p>
+                                </td>
+                            </tr>
+                        </table>
                     </td>
                 </tr>
+                <!-- Уважаемый... -->
+                <tr>
+                    <td class="one-column-appeal">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner contents">
+                                    <p>Уважаемый Иван Иванович! Вы записаны на прием в поликлинику. Ждём Вас!</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- таблица -->
+                <tr>
+                    <td class="one-column-talon">
+                        <table width="100%">
+                            <tr>
+                                <td nowrap class="inner contents">
+                                    <p>Ваш талон!</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="inner contents talon">Дата</td>
+                                <td class="inner contents">19.06.2019</td>
+                            </tr>
+                            <tr>
+                                <td class="inner contents talon grey">Время</td>
+                                <td class="inner contents grey">14:00</td>
+                            </tr>
+                            <tr>
+                                <td class="inner contents talon">№ талона</td>
+                                <td class="inner contents">КД003</td>
+                            </tr>
+                            <tr>
+                                <td class="inner contents talon grey">Врач</td>
+                                <td class="inner contents grey">19.06.2019</td>
+                            </tr>
+                            <tr>
+                                <td class="inner contents talon">Кабинет</td>
+                                <td class="inner contents">301</td>
+                            </tr>
+                            <tr>
+                                <td class="inner contents talon grey">Адрес</td>
+                                <td class="inner contents grey">
+                                    2-й покровский переулок, корп. 4, Котельники
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Придете:... -->
+                <tr>
+                    <td class="one-column-come">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner contents">
+                                    <p>Вы придете?</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- кнопки -->
+                <!-- <tr>
+                    <td class="one-column-talon">
+                        <table>
+                            <tr>
+                                <td class="button success">
+                                    <a class="link" href="https://www.copernica.com" target="_blank">
+                                        Да
+                                    </a>
+                                </td>
+                                <td align="right" class="button danger">
+                                    <a class="link" href="https://www.copernica.com" target="_blank">
+                                        Нет
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr> -->
+                <!-- еще кнопки -->
+                <tr>
+                    <td class="two-column">
+                        <!--[if (gte mso 9)|(IE)]>
+                            <table width="100%">
+                            <tr>
+                            <td width="50%" valign="top">
+                            <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td class="button success">
+                                                    <a class="link" href="https://www.copernica.com" target="_blank">
+                                                        Да
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                            </td><td width="50%" valign="top">
+                            <![endif]-->
+                        <div class="column">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents">
+                                            <tr>
+                                                <td class="button danger">
+                                                    <a class="link" href="https://www.copernica.com" target="_blank">
+                                                        Нет
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+                    </td>
+                </tr>
+                <!-- забота -->
+                <tr>
+                    <td class="one-column-care">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner contents">
+                                    <p>С заботой о Вас,</p>
+                                    <p class="namePolyclinic">
+                                        ГБУЗ МО "Котельниковская городская поликлиника"
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- герб -->
+                <tr>
+                    <td class="one-column-gerb">
+                        <table width="100%">
+                            <tr>
+                                <td valign="top" style="vertical-align:top;" class="inner contents gerb">
+                                    <img src="./images/gerb.png" alt="" align="left">
+                                    <p>Министерство здравохранения Московской области</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- линия -->
+                <!-- подвал -->
+                <tr>
+                    <td class="one-column-footer">
+                        <table width="100%">
+                            <tr>
+                                <td class="inner contents">
+                                    <p>Обращаем внимание, что в случае 3 неявок на прием без отмены записи, наше
+                                        учреждение будет вынуждено ограничить вам возможность самостоятельной записи к
+                                        врачу с использованием электронных сервисов правительства Московской области.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="inner contents">
+                                    <p>
+                                        Если вы не хотите получать уведомления о записи на прием, пройдите по <a
+                                            href="google.com">ссылке</a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="inner contents">
+                                    <p>
+                                        Это письмо сформировано автоматически. Отвечать на него не нужно.
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            </td>
+            </tr>
             </table>
             <!--[if (gte mso 9)|(IE)]>
                         </td>
