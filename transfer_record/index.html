@@ -127,7 +127,6 @@
         .button a {
             padding: 8px 12px;
             border-radius: 2px;
-            font-family: Helvetica, Arial, sans-serif;
             font-size: 14px;
             color: #000000;
             text-decoration: none;
@@ -135,12 +134,10 @@
         }
 
         .triangle {
-            border-right: 2px solid;
-            border-bottom: 2px solid;
-            height: 7px;
-            width: 7px;
-            transform: rotate(-45deg);
+            float: right;
+            transform: scale(2);
             color: #aaaaaa;
+            padding: 0 0 3px 0;
         }
 
         .indent {
@@ -150,7 +147,6 @@
         .middle {
             vertical-align: top;
         }
-
 
         /* Windows Phone Viewport Fix */
         @-ms-viewport {
@@ -195,7 +191,7 @@
                                             <td class="button success">
                                                 <a class="link" href="https://www.copernica.com" target="_blank">
                                                     В личном кабинете
-                                                    <span style="float: right;">
+                                                    <span class="triangle">
                                                         &rsaquo;
                                                     </span>
                                                 </a>
@@ -210,7 +206,7 @@
                                             <td class="button success">
                                                 <a class="link" href="https://www.copernica.com" target="_blank">
                                                     8 (800) 550-50-30
-                                                    <span style="float: right;">
+                                                    <span class="triangle">
                                                         &rsaquo;
                                                     </span>
                                                 </a>
