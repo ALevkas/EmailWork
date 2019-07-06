@@ -9,18 +9,27 @@
     <title></title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
+        @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+        @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+
         /* Basics */
+        html {
+            height: 100%;
+        }
+
         body {
             Margin: 0;
             padding: 0;
             min-width: 100%;
-            background-color: #ffffff;
+            background-color: #f2f2f2;
+            font-family: 'Roboto';
+            min-height: 100%;
         }
 
         table {
             border-spacing: 0;
-            font-family: sans-serif;
             color: #333333;
+            background-color: #ffffff;
         }
 
         td {
@@ -46,6 +55,8 @@
             margin: 0 auto;
             width: 100%;
             max-width: 600px;
+            min-height: 100%;
+            position: fixed;
         }
 
         .inner {
@@ -54,6 +65,7 @@
 
         p {
             Margin: 0;
+            font-weight: 300;
         }
 
         a {
@@ -81,13 +93,26 @@
         .one-column p {
             font-size: 24px;
             font-weight: bold;
-            Margin-bottom: 10px;
+            Margin: 10px 0 10px 0;
             color: #ffffff;
             text-transform: uppercase;
         }
 
         .header {
             background-color: #EB5757;
+            height: 80px;
+        }
+
+        .middle {
+            vertical-align: top;
+            padding-top: 30px;
+        }
+        .one-column-appeal {
+            padding: 30px;
+        }
+
+        .one-column-appeal p {
+            font-size: 20px;
         }
 
         /* Windows Phone Viewport Fix */
@@ -112,7 +137,7 @@
             <![endif]-->
             <table class="outer" align="center">
                 <!-- заголовок -->
-                <tr>
+                <tr class="header">
                     <td class="one-column">
                         <table width="100%">
                             <tr class="header">
@@ -124,12 +149,13 @@
                     </td>
                 </tr>
                 <!-- Уважаемый... -->
-                <tr>
+                <tr class="middle">
                     <td class="one-column-appeal">
                         <table width="100%">
                             <tr>
                                 <td class="inner contents">
-                                    <p align="center">Спасибо за обратную связь! Теперь другой пациент сможет записаться на это время! </p>
+                                    <p align="center">Спасибо за обратную связь! Теперь другой пациент сможет записаться
+                                        на это время! </p>
                                 </td>
                             </tr>
                         </table>

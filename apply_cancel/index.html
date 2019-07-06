@@ -9,18 +9,27 @@
     <title></title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
+        @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+        @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+
         /* Basics */
+        html {
+            height: 100%;
+        }
+
         body {
             Margin: 0;
             padding: 0;
             min-width: 100%;
-            background-color: #ffffff;
+            background-color: #f2f2f2;
+            font-family: 'Roboto';
+            min-height: 100%;
         }
 
         table {
             border-spacing: 0;
-            font-family: sans-serif;
             color: #333333;
+            background-color: #ffffff;
         }
 
         td {
@@ -46,6 +55,9 @@
             margin: 0 auto;
             width: 100%;
             max-width: 600px;
+            min-height: 100%;
+            position: fixed;
+
         }
 
         .inner {
@@ -81,16 +93,22 @@
         .one-column p {
             font-size: 24px;
             font-weight: bold;
-            Margin-bottom: 10px;
+            Margin: 10px 0 10px 0;
             color: #ffffff;
             text-transform: uppercase;
         }
 
         .header {
             background-color: #EB5757;
+            height: 80px;
+        }
+
+        .middle {
+            height: 80px;
         }
 
         .attetion {
+            font-size: 20px;
             font-weight: bold;
             padding: 10px 0 10px 0;
         }
@@ -114,7 +132,7 @@
             font-size: 14px;
             color: #000000;
             text-decoration: none;
-            display: inline-block;
+            display: block;
         }
 
         .triangle {
@@ -130,6 +148,9 @@
             padding: 11px 10px 0 0;
         }
 
+        .top-button{
+            vertical-align: top;
+        }
 
 
         /* Windows Phone Viewport Fix */
@@ -154,7 +175,7 @@
             <![endif]-->
             <table class="outer" align="center">
                 <!-- заголовок -->
-                <tr>
+                <tr class="header">
                     <td class="one-column">
                         <table width="100%">
                             <tr class="header">
@@ -166,7 +187,7 @@
                     </td>
                 </tr>
                 <!-- Уважаемый... -->
-                <tr>
+                <tr class="middle">
                     <td class="one-column-appeal">
                         <table width="100%">
                             <tr>
@@ -179,7 +200,7 @@
                     </td>
                 </tr>
 
-                <tr>
+                <tr class="top-button">
                     <td class="one-column-appeal">
                         <table width="100%">
                             <tr>
@@ -189,13 +210,11 @@
                                             <td class="button success">
                                                 <a class="link" href="https://www.copernica.com" target="_blank">
                                                     Отменить запись
+
+                                                    <span style="float: right;">
+                                                        &rsaquo;
+                                                    </span>
                                                 </a>
-                                                <table class="indent" align="right">
-                                                    <tr>
-                                                        <td class="triangle">
-                                                        </td>
-                                                    </tr>
-                                                </table>
                                             </td>
                                         </tr>
                                     </table>

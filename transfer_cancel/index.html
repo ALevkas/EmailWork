@@ -9,18 +9,27 @@
     <title></title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
+        @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+        @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+
         /* Basics */
+        html {
+            height: 100%;
+        }
+
         body {
             Margin: 0;
             padding: 0;
             min-width: 100%;
-            background-color: #ffffff;
+            background-color: #f2f2f2;
+            font-family: 'Roboto';
+            min-height: 100%;
         }
 
         table {
             border-spacing: 0;
-            font-family: sans-serif;
             color: #333333;
+            background-color: #ffffff;
         }
 
         td {
@@ -46,6 +55,8 @@
             margin: 0 auto;
             width: 100%;
             max-width: 600px;
+            min-height: 100%;
+            position: fixed;
         }
 
         .inner {
@@ -93,17 +104,19 @@
         .one-column p {
             font-size: 24px;
             font-weight: bold;
-            Margin-bottom: 10px;
+            Margin: 10px 0 10px 0;
             color: #ffffff;
             text-transform: uppercase;
         }
 
         .header {
             background-color: #F3A21B;
+            height: 80px;
         }
 
         .headerTwo {
             background-color: #EB5757;
+            height: 80px;
         }
 
         .attetion {
@@ -130,7 +143,7 @@
             font-size: 14px;
             color: #000000;
             text-decoration: none;
-            display: inline-block;
+            display: block;
         }
 
         .otst {
@@ -148,6 +161,14 @@
 
         .indent {
             padding: 11px 10px 0 0;
+        }
+
+        .first-button {
+            height: 80px;
+        }
+
+        .twoGroup-button {
+            vertical-align: top;
         }
 
 
@@ -173,7 +194,7 @@
             <![endif]-->
             <table class="outer" align="center">
                 <!-- заголовок -->
-                <tr>
+                <tr class="header">
                     <td class="one-column">
                         <table width="100%">
                             <tr class="header">
@@ -184,7 +205,7 @@
                         </table>
                     </td>
                 </tr>
-                <tr>
+                <tr class="first-button">
                     <td class="one-column-appeal">
                         <table width="100%">
                             <tr>
@@ -194,13 +215,10 @@
                                             <td class="button">
                                                 <a class="link" href="https://www.copernica.com" target="_blank">
                                                     Перенести запись
+                                                    <span style="float: right;">
+                                                        &rsaquo;
+                                                    </span>
                                                 </a>
-                                                <table class="indent" align="right">
-                                                    <tr>
-                                                        <td class="triangle">
-                                                        </td>
-                                                    </tr>
-                                                </table>
                                             </td>
                                         </tr>
                                     </table>
@@ -209,7 +227,7 @@
                         </table>
                     </td>
                 </tr>
-                <tr>
+                <tr class="headerTwo">
                     <td class="one-column">
                         <table width="100%">
                             <tr class="headerTwo">
@@ -220,7 +238,7 @@
                         </table>
                     </td>
                 </tr>
-                <tr>
+                <tr class="twoGroup-button">
                     <td class="one-column-appeal">
                         <table width="100%">
                             <tr>
@@ -230,13 +248,10 @@
                                             <td class="button">
                                                 <a class="link" href="https://www.copernica.com" target="_blank">
                                                     Не смогу прийти
+                                                    <span style="float: right;">
+                                                        &rsaquo;
+                                                    </span>
                                                 </a>
-                                                <table class="indent" align="right">
-                                                    <tr>
-                                                        <td class="triangle">
-                                                        </td>
-                                                    </tr>
-                                                </table>
                                             </td>
                                         </tr>
                                     </table>
@@ -249,13 +264,10 @@
                                             <td class="button">
                                                 <a class="link" href="https://www.copernica.com" target="_blank">
                                                     Уже был(а) на приёме
+                                                    <span style="float: right;">
+                                                        &rsaquo;
+                                                    </span>
                                                 </a>
-                                                <table class="indent" align="right">
-                                                    <tr>
-                                                        <td class="triangle">
-                                                        </td>
-                                                    </tr>
-                                                </table>
                                             </td>
                                         </tr>
                                     </table>
@@ -268,13 +280,10 @@
                                             <td class="button">
                                                 <a class="link" href="https://www.copernica.com" target="_blank">
                                                     Записан(а) в другую клинику
+                                                    <span style="float: right;">
+                                                        &rsaquo;
+                                                    </span>
                                                 </a>
-                                                <table class="indent" align="right">
-                                                    <tr>
-                                                        <td class="triangle">
-                                                        </td>
-                                                    </tr>
-                                                </table>
                                             </td>
                                         </tr>
                                     </table>
@@ -287,13 +296,10 @@
                                             <td class="button">
                                                 <a class="link" href="https://www.copernica.com" target="_blank">
                                                     Не записывался(ась)
+                                                    <span style="float: right;">
+                                                        &rsaquo;
+                                                    </span>
                                                 </a>
-                                                <table class="indent" align="right">
-                                                    <tr>
-                                                        <td class="triangle">
-                                                        </td>
-                                                    </tr>
-                                                </table>
                                             </td>
                                         </tr>
                                     </table>
